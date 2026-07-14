@@ -15,6 +15,8 @@ Voice and visual system matched to the official Invensis PMP brochure.
 **Subject:** Your {{course_name}} brochure is ready, {{first_name}}  
 **Preview:** Full syllabus, accreditation route, and the next four cohort dates. All in your dashboard.
 
+**Feedback:** _none_
+
 **WELCOME TO INVENSIS LEARNING**
 
 ###  Welcome, {{first_name}}
@@ -44,6 +46,8 @@ Welcome aboard,
 
 **Subject:** Welcome, {{first_name}}: let's talk about {{course_name}}  
 **Preview:** Thank you for reaching out. A training advisor will call you within one working day.
+
+**Feedback:** _none_
 
 **WELCOME TO INVENSIS LEARNING**
 
@@ -78,6 +82,8 @@ Kind regards,
 
 **Subject:** Thanks {{first_name}}: let's plan your {{course_name}} training  
 **Preview:** Welcome to Invensis Learning. A training advisor will be in touch within one working day.
+
+**Feedback:** _none_
 
 **WELCOME TO INVENSIS LEARNING**
 
@@ -116,6 +122,8 @@ Looking forward to working with you,
 
 **Subject:** Order {{order_id}} confirmed: here's what you've booked  
 **Preview:** Your order summary. Payment is processing now; your receipt follows the moment it clears.
+
+**Feedback:** _none_
 
 **ORDER CONFIRMED**
 
@@ -160,6 +168,8 @@ We look forward to supporting you,
 **Subject:** Payment received: you're officially enrolled, {{first_name}}  
 **Preview:** Your seat in the {{batch_code}} cohort is locked. Your receipt is in your dashboard.
 
+**Feedback:** _none_
+
 **ENROLMENT CONFIRMED**
 
 ###  You're officially in, {{first_name}}
@@ -195,6 +205,8 @@ Welcome aboard,
 
 **Subject:** Welcome to {{course_name}}: set up your dashboard, {{first_name}}  
 **Preview:** Congratulations on enrolling. Everything for your course lives in one place. Set up your dashboard to access it.
+
+**Feedback:** _none_
 
 **ENROLMENT COMPLETE**
 
@@ -232,6 +244,8 @@ We look forward to having you in the cohort,
 
 **Subject:** Order {{order_id}} confirmed: {{seat_count}} seats on {{course_name}}  
 **Preview:** Your order summary for {{company}}. Payment is processing; the receipt follows on clearance.
+
+**Feedback:** _none_
 
 **GROUP ORDER CONFIRMED**
 
@@ -276,6 +290,8 @@ We look forward to supporting your team,
 **Subject:** Payment received: all {{seat_count}} seats are locked  
 **Preview:** Your receipt is in your dashboard. Add your learners next.
 
+**Feedback:** _none_
+
 **SEATS CONFIRMED**
 
 ###  All {{seat_count}} seats are locked
@@ -312,6 +328,8 @@ Welcome aboard,
 
 **Subject:** {{first_name}}, add your {{seat_count}} learners  
 **Preview:** Your administrator dashboard is live. Here's everything between now and your cohort.
+
+**Feedback:** _none_
 
 **ADMINISTRATOR DASHBOARD LIVE**
 
@@ -350,6 +368,8 @@ Looking forward to having your team in the cohort,
 
 **Subject:** Three days to kick-off: your join link & prep guide  
 **Preview:** Your join link, the Day 1 schedule, and a five-minute checklist to show up ready.
+
+**Feedback:** _none_
 
 **THREE DAYS TO GO**
 
@@ -392,6 +412,8 @@ See you on {{batch_start_date}},
 **Subject:** Action needed: register with {{governing_body}}  
 **Preview:** You need your own account there before we can release your official study material.
 
+**Feedback:** _none_
+
 **ACTION REQUIRED**
 
 ###  One account to create, {{first_name}}
@@ -424,6 +446,8 @@ We'll take it from there,
 **Subject:** Day {{day_number}} recap: and two minutes, please  
 **Preview:** What you covered today, tonight's recording, and a feedback form that reaches your trainer before tomorrow.
 
+**Feedback:** _none_
+
 **DAY {{DAY_NUMBER}} COMPLETE**
 
 ###  Day {{day_number}} complete, {{first_name}}
@@ -454,6 +478,8 @@ See you tomorrow,
 
 **Subject:** Cohort complete, {{first_name}}: download your certificate  
 **Preview:** Your certificate of completion, session recordings, and your official invoice are ready.
+
+**Feedback:** _none_
 
 **COHORT COMPLETE**
 
@@ -489,6 +515,8 @@ Wishing you every success,
 
 **Subject:** Your exam voucher is here: valid until {{voucher_expiry}}  
 **Preview:** Voucher code inside. Six months of validity, and it goes faster than anyone expects.
+
+**Feedback:** _none_
 
 **EXAM VOUCHER ISSUED**
 
@@ -532,6 +560,8 @@ We are here to support you,
 **Subject:** Your exam voucher is still unbooked, {{first_name}}  
 **Preview:** Five months of validity left, and the material is at its sharpest right now.
 
+**Feedback:** _none_
+
 **FIVE MONTHS LEFT**
 
 ###  Right now, you know this material
@@ -554,6 +584,8 @@ We're here if you need us,
 
 **Subject:** Not booked yet? Here's what usually stops people  
 **Preview:** Three common blockers, and exactly what to do about each one.
+
+**Feedback:** _none_
 
 **FOUR MONTHS LEFT**
 
@@ -581,6 +613,8 @@ We're here if you need us,
 **Subject:** Halfway point on your exam voucher  
 **Preview:** Three months left on {{voucher_code}}. Retention drops sharply past six months.
 
+**Feedback:** _none_
+
 **THREE MONTHS LEFT**
 
 ###  Halfway point, {{first_name}}
@@ -603,6 +637,8 @@ Don't let this one go,
 
 **Subject:** Two months left on voucher {{voucher_code}}  
 **Preview:** After {{voucher_expiry}} it cannot be extended, transferred, or refunded.
+
+**Feedback:** _none_
 
 **TWO MONTHS LEFT**
 
@@ -627,6 +663,8 @@ Don't let this one go,
 **Subject:** One month left: book now, sit later  
 **Preview:** You don't need to sit it this month. You need to book it this month.
 
+**Feedback:** _none_
+
 **ONE MONTH LEFT**
 
 ###  Book now. Sit later.
@@ -649,6 +687,8 @@ Don't let this one go,
 
 **Subject:** Final call: your voucher expires in 7 days  
 **Preview:** This is the last email you'll get about it.
+
+**Feedback:** _none_
 
 **SEVEN DAYS LEFT**
 
@@ -674,6 +714,8 @@ Don't let this one go,
 
 **Subject:** Congratulations, {{first_name}}: you passed {{exam_name}}  
 **Preview:** {{exam_name}}, certified. Here's what to do with it this week.
+
+**Feedback:** _none_
 
 **EXAMINATION PASSED**
 
@@ -715,6 +757,8 @@ Congratulations once again,
 
 **Subject:** About your {{exam_name}} result, {{first_name}}  
 **Preview:** A setback, not a verdict. We'll stay with you all the way to certification, and an advisor will be in touch.
+
+**Feedback:** _none_
 
 **YOUR EXAMINATION RESULT**
 
@@ -766,6 +810,8 @@ We're not going anywhere,
 **Subject:** Three days to kick-off: your join link & prep guide  
 **Preview:** Your join link, the Day 1 schedule, and one thing to bring that changes everything.
 
+**Feedback:** _none_
+
 **THREE DAYS TO GO**
 
 ###  Almost time, {{first_name}}
@@ -807,6 +853,8 @@ See you on {{batch_start_date}},
 **Subject:** Day {{day_number}} recap: and two minutes, please  
 **Preview:** What you covered today, tonight's recording, and a feedback form that reaches your trainer before tomorrow.
 
+**Feedback:** _none_
+
 **DAY {{DAY_NUMBER}} COMPLETE**
 
 ###  Day {{day_number}} complete, {{first_name}}
@@ -837,6 +885,8 @@ See you tomorrow,
 
 **Subject:** Cohort complete, {{first_name}}: download your certificate  
 **Preview:** Your certificate of completion, session recordings, and your official invoice are ready.
+
+**Feedback:** _none_
 
 **COHORT COMPLETE**
 
@@ -875,6 +925,8 @@ Wishing you every success,
 
 **Subject:** Reschedule request received: ticket {{ticket_id}}  
 **Preview:** Nothing has changed yet. Your current seat stays reserved until the new date is confirmed.
+
+**Feedback:** _none_
 
 **RESCHEDULE REQUESTED**
 
@@ -915,6 +967,8 @@ We'll sort it,
 **Subject:** Confirmed: you're now in the {{new_batch_code}} cohort  
 **Preview:** New dates, same course. A fresh join link is on its way.
 
+**Feedback:** _none_
+
 **RESCHEDULE CONFIRMED**
 
 ###  All moved, {{first_name}}
@@ -946,6 +1000,8 @@ See you there,
 
 **Subject:** Cancellation request received: ticket {{ticket_id}}  
 **Preview:** Nothing has been cancelled yet. Here are your options before we process anything.
+
+**Feedback:** _none_
 
 **CANCELLATION REQUESTED**
 
@@ -989,6 +1045,8 @@ Whatever works for you,
 **Subject:** {{course_name}} cancelled: refund details inside  
 **Preview:** Your refund amount and timeline are confirmed below.
 
+**Feedback:** _none_
+
 **CANCELLATION PROCESSED**
 
 ###  All done, {{first_name}}
@@ -1023,6 +1081,8 @@ The door stays open,
 
 **Subject:** Request to update your details: ticket {{ticket_id}}  
 **Preview:** We'll confirm within one working day.
+
+**Feedback:** _none_
 
 **UPDATE REQUESTED**
 
@@ -1059,6 +1119,8 @@ We'll take it from here,
 **Subject:** Your details have been updated  
 **Preview:** Please check the spelling of your name carefully.
 
+**Feedback:** _none_
+
 **DETAILS UPDATED**
 
 ###  All updated, {{first_name}}
@@ -1084,6 +1146,8 @@ Thanks for checking,
 
 **Subject:** We've received your concern: ticket {{ticket_id}}  
 **Preview:** We've taken this as a high priority and a programme manager is now on it.
+
+**Feedback:** _none_
 
 **HIGH PRIORITY**
 
@@ -1120,6 +1184,8 @@ We'll make this right,
 **Subject:** Resolved: your concern about {{course_name}}  
 **Preview:** What you raised, what we did, and what changes as a result.
 
+**Feedback:** _none_
+
 **ESCALATION RESOLVED**
 
 ###  Sorted, {{first_name}}
@@ -1150,6 +1216,8 @@ Thanks for your patience,
 
 **Subject:** Your payment didn't go through: let's fix it  
 **Preview:** Don't worry, this happens. We've held your seat. One-click resume inside.
+
+**Feedback:** _none_
 
 **PAYMENT SUPPORT**
 
@@ -1188,6 +1256,8 @@ We've got you,
 **Subject:** Your seat is still being held, {{first_name}}  
 **Preview:** Your cart is intact, your price is locked, and one click puts you back at the payment step.
 
+**Feedback:** _none_
+
 **CART HELD**
 
 ###  We saved your spot
@@ -1221,6 +1291,8 @@ Here when you're ready,
 **Subject:** {{first_name}}: four ways to complete your enrolment  
 **Preview:** If the card is the problem, it doesn't have to be. Corporate billing, bank transfer, or a call.
 
+**Feedback:** _none_
+
 **ENROLMENT ASSISTANCE**
 
 ###  One of these will work
@@ -1252,6 +1324,8 @@ However works for you,
 
 **Subject:** Final hour: your seat in {{batch_code}} releases today  
 **Preview:** After this, we return it to general sale. This is the last automated email about this order.
+
+**Feedback:** _none_
 
 **FINAL REMINDER**
 
@@ -1293,6 +1367,8 @@ Here if you need us,
 **Subject:** Cohort assigned: {{course_name}}, {{batch_code}}  
 **Preview:** Full brief, learner list, and materials inside.
 
+**Feedback:** _none_
+
 **COHORT ASSIGNMENT**
 
 ###  {{learner_count}} learners are counting on this
@@ -1332,6 +1408,8 @@ Thanks as always,
 
 **Subject:** Tomorrow: {{batch_code}}, day {{day_number}}  
 **Preview:** Your host link, tomorrow's agenda, and today's learner feedback.
+
+**Feedback:** _none_
 
 **TOMORROW'S SESSION**
 
@@ -1374,6 +1452,8 @@ Have a good session,
 **Subject:** Two minutes: log day {{day_number}} for {{batch_code}}  
 **Preview:** It triggers the learner recap and records attendance. Please do it tonight.
 
+**Feedback:** _none_
+
 **END OF DAY**
 
 ###  Two minutes, tonight
@@ -1402,6 +1482,8 @@ Thanks,
 
 **Subject:** Reminder: day {{day_number}} topics for {{batch_code}}  
 **Preview:** We still need the topics you covered today. Log them in the dashboard, or just reply to this email.
+
+**Feedback:** _none_
 
 **DAILY TOPICS REMINDER**
 
@@ -1440,6 +1522,8 @@ With thanks for your help,
 **Subject:** [LEAD] {{full_name}}, {{company}} | {{course_name}} | score {{lead_score}}  
 **Preview:** Assigned to you. The two-hour response clock has started.
 
+**Feedback:** _none_
+
 **NEW LEAD ASSIGNED**
 
 ###  {{full_name}}, {{company}}
@@ -1476,6 +1560,8 @@ _Log a call, email, or reassignment_
 **Subject:** [ESCALATED] Untouched 2 hrs: {{full_name}}, {{company}}  
 **Preview:** No activity logged since assignment. Jaya is copied.
 
+**Feedback:** _none_
+
 **ESCALATION**
 
 ###  No activity in two hours
@@ -1507,6 +1593,8 @@ _Log activity or request reassignment_
 
 **Subject:** [ACTION] {{full_name}} did not pass {{exam_name}}  
 **Preview:** Call within 48 hours. Do not lead with resit pricing.
+
+**Feedback:** _none_
 
 **LEARNER DID NOT PASS**
 
@@ -1545,6 +1633,8 @@ _If this learner is part of a group booking, {{company}} may have others in the 
 **Subject:** [CANCEL] {{full_name}}, {{company}} | USD {{amount}} at risk  
 **Preview:** Ticket {{ticket_id}}. Reschedule is still on the table.
 
+**Feedback:** _none_
+
 **CANCELLATION REQUESTED**
 
 ###  USD {{amount}} at risk
@@ -1575,6 +1665,8 @@ _Ticket {{ticket_id}}_
 
 **Subject:** [CHANGE] {{full_name}}, {{company}} | details update requested  
 **Preview:** FYI only. No action unless the change is material.
+
+**Feedback:** _none_
 
 **DETAILS CHANGE REQUESTED**
 

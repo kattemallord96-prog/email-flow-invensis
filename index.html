@@ -42,6 +42,10 @@ dd{margin:0;font-size:12.5px;color:#374151;word-break:break-word}
 .eids{font:600 9.5px/1 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#6b7280}
 .eb{padding:26px 34px 32px}
 .ef{background:#101030;padding:22px 34px 26px;font:400 11px/1.85 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;color:#8f98c0;text-align:center}
+.fb-row{grid-column:1/-1}
+.fb{width:100%;min-height:60px;padding:10px 12px;border:1.5px dashed #d1d5db;border-radius:8px;font:13px/1.5 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;color:#101030;background:#fefce8;resize:vertical}
+.fb:focus{border-color:#018BD4;outline:none;box-shadow:0 0 0 3px rgba(1,139,212,.15)}
+.fb::placeholder{color:#9ca3af}
 @media(max-width:960px){.shell{grid-template-columns:1fr}nav{position:static;height:auto}main{padding:28px 16px 80px}.copy{position:static;margin-top:12px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style></head><body>
@@ -68,6 +72,7 @@ dd{margin:0;font-size:12.5px;color:#374151;word-break:break-word}
   <div><dt>Trigger</dt><dd>Brochure form submitted</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Full syllabus, accreditation route, and the next four cohort dates. All in your dashboard.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A1">Copy HTML</button>
 </header>
@@ -142,6 +147,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Individual enquiry submitted</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Thank you for reaching out. A training advisor will call you within one working day.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A2">Copy HTML</button>
 </header>
@@ -216,6 +222,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Group enquiry submitted</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Welcome to Invensis Learning. A training advisor will be in touch within one working day.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A3">Copy HTML</button>
 </header>
@@ -292,6 +299,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Order created at checkout</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Your order summary. Payment is processing now; your receipt follows the moment it clears.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A4" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A4">Copy HTML</button>
 </header>
@@ -368,6 +376,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Stripe payment_intent.succeeded</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Your seat in the {{batch_code}} cohort is locked. Your receipt is in your dashboard.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A5" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A5">Copy HTML</button>
 </header>
@@ -444,6 +453,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Payment cleared</dd></div>
   <div><dt>Timing</dt><dd>T+15m</dd></div>
   <div><dt>Preview text</dt><dd>Congratulations on enrolling. Everything for your course lives in one place. Set up your dashboard to access it.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A6" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A6">Copy HTML</button>
 </header>
@@ -518,6 +528,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Group order created</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Your order summary for {{company}}. Payment is processing; the receipt follows on clearance.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A7" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A7">Copy HTML</button>
 </header>
@@ -594,6 +605,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Stripe success, group order</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Your receipt is in your dashboard. Add your learners next.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A8" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A8">Copy HTML</button>
 </header>
@@ -670,6 +682,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Payment cleared, group order</dd></div>
   <div><dt>Timing</dt><dd>T+15m</dd></div>
   <div><dt>Preview text</dt><dd>Your administrator dashboard is live. Here's everything between now and your cohort.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="A9" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-A9">Copy HTML</button>
 </header>
@@ -744,6 +757,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>72 hours before cohort start</dd></div>
   <div><dt>Timing</dt><dd>T&minus;3d</dd></div>
   <div><dt>Preview text</dt><dd>Your join link, the Day 1 schedule, and a five-minute checklist to show up ready.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B1">Copy HTML</button>
 </header>
@@ -822,6 +836,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Ops console button</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>You need your own account there before we can release your official study material.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B2">Copy HTML</button>
 </header>
@@ -898,6 +913,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Trainer marks day complete</dd></div>
   <div><dt>Timing</dt><dd>T+1h &middot; repeats per day</dd></div>
   <div><dt>Preview text</dt><dd>What you covered today, tonight's recording, and a feedback form that reaches your trainer before tomorrow.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B3">Copy HTML</button>
 </header>
@@ -974,6 +990,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Final day marked complete</dd></div>
   <div><dt>Timing</dt><dd>T+2h</dd></div>
   <div><dt>Preview text</dt><dd>Your certificate of completion, session recordings, and your official invoice are ready.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B4" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B4">Copy HTML</button>
 </header>
@@ -1052,6 +1069,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Voucher assigned in ops console</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>Voucher code inside. Six months of validity, and it goes faster than anyone expects.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B5" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B5">Copy HTML</button>
 </header>
@@ -1130,6 +1148,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Voucher unredeemed &middot; exits on booked or redeemed</dd></div>
   <div><dt>Timing</dt><dd>Month 1</dd></div>
   <div><dt>Preview text</dt><dd>Five months of validity left, and the material is at its sharpest right now.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B6.1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B6.1">Copy HTML</button>
 </header>
@@ -1202,6 +1221,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Voucher unredeemed &middot; exits on booked or redeemed</dd></div>
   <div><dt>Timing</dt><dd>Month 2</dd></div>
   <div><dt>Preview text</dt><dd>Three common blockers, and exactly what to do about each one.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B6.2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B6.2">Copy HTML</button>
 </header>
@@ -1274,6 +1294,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Voucher unredeemed &middot; exits on booked or redeemed</dd></div>
   <div><dt>Timing</dt><dd>Month 3, halfway</dd></div>
   <div><dt>Preview text</dt><dd>Three months left on {{voucher_code}}. Retention drops sharply past six months.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B6.3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B6.3">Copy HTML</button>
 </header>
@@ -1346,6 +1367,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Voucher unredeemed &middot; exits on booked or redeemed</dd></div>
   <div><dt>Timing</dt><dd>Month 4</dd></div>
   <div><dt>Preview text</dt><dd>After {{voucher_expiry}} it cannot be extended, transferred, or refunded.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B6.4" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B6.4">Copy HTML</button>
 </header>
@@ -1418,6 +1440,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Voucher unredeemed &middot; exits on booked or redeemed</dd></div>
   <div><dt>Timing</dt><dd>Month 5</dd></div>
   <div><dt>Preview text</dt><dd>You don't need to sit it this month. You need to book it this month.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B6.5" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B6.5">Copy HTML</button>
 </header>
@@ -1490,6 +1513,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Voucher unredeemed &middot; exits on booked or redeemed</dd></div>
   <div><dt>Timing</dt><dd>Final, T&minus;7d</dd></div>
   <div><dt>Preview text</dt><dd>This is the last email you'll get about it.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B6.6" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B6.6">Copy HTML</button>
 </header>
@@ -1564,6 +1588,7 @@ a{color:#dc2626}
   <div><dt>Trigger</dt><dd>Result marked Pass</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>{{exam_name}}, certified. Here's what to do with it this week.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B7" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B7">Copy HTML</button>
 </header>
@@ -1642,6 +1667,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Result marked Fail</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>A setback, not a verdict. We'll stay with you all the way to certification, and an advisor will be in touch.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="B8" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-B8">Copy HTML</button>
 </header>
@@ -1724,6 +1750,7 @@ a{color:#101030}
   <div><dt>Trigger</dt><dd>72 hours before cohort start</dd></div>
   <div><dt>Timing</dt><dd>T&minus;3d</dd></div>
   <div><dt>Preview text</dt><dd>Your join link, the Day 1 schedule, and one thing to bring that changes everything.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="C1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-C1">Copy HTML</button>
 </header>
@@ -1802,6 +1829,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Trainer marks day complete</dd></div>
   <div><dt>Timing</dt><dd>T+1h &middot; repeats per day</dd></div>
   <div><dt>Preview text</dt><dd>What you covered today, tonight's recording, and a feedback form that reaches your trainer before tomorrow.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="C2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-C2">Copy HTML</button>
 </header>
@@ -1878,6 +1906,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Final day marked complete</dd></div>
   <div><dt>Timing</dt><dd>T+2h</dd></div>
   <div><dt>Preview text</dt><dd>Your certificate of completion, session recordings, and your official invoice are ready.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="C3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-C3">Copy HTML</button>
 </header>
@@ -1954,6 +1983,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Reschedule ticket created</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Nothing has changed yet. Your current seat stays reserved until the new date is confirmed.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D1">Copy HTML</button>
 </header>
@@ -2030,6 +2060,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Ops console button</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>New dates, same course. A fresh join link is on its way.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D2">Copy HTML</button>
 </header>
@@ -2104,6 +2135,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Cancellation ticket created</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Nothing has been cancelled yet. Here are your options before we process anything.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D3">Copy HTML</button>
 </header>
@@ -2180,6 +2212,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Ops console button</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>Your refund amount and timeline are confirmed below.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D4" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D4">Copy HTML</button>
 </header>
@@ -2256,6 +2289,7 @@ a{color:#101030}
   <div><dt>Trigger</dt><dd>Details change ticket created</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>We'll confirm within one working day.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D5" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D5">Copy HTML</button>
 </header>
@@ -2332,6 +2366,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>Ops console button</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>Please check the spelling of your name carefully.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D6" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D6">Copy HTML</button>
 </header>
@@ -2406,6 +2441,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Training escalation ticket created</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>We've taken this as a high priority and a programme manager is now on it.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D7" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D7">Copy HTML</button>
 </header>
@@ -2482,6 +2518,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Ops console button</dd></div>
   <div><dt>Timing</dt><dd>MANUAL</dd></div>
   <div><dt>Preview text</dt><dd>What you raised, what we did, and what changes as a result.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="D8" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-D8">Copy HTML</button>
 </header>
@@ -2554,6 +2591,7 @@ a{color:#16a34a}
   <div><dt>Trigger</dt><dd>Stripe payment_intent.payment_failed</dd></div>
   <div><dt>Timing</dt><dd>T+5m</dd></div>
   <div><dt>Preview text</dt><dd>Don't worry, this happens. We've held your seat. One-click resume inside.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="E1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-E1">Copy HTML</button>
 </header>
@@ -2632,6 +2670,7 @@ a{color:#dc2626}
   <div><dt>Trigger</dt><dd>Still unpaid after 1 hour</dd></div>
   <div><dt>Timing</dt><dd>T+1h</dd></div>
   <div><dt>Preview text</dt><dd>Your cart is intact, your price is locked, and one click puts you back at the payment step.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="E2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-E2">Copy HTML</button>
 </header>
@@ -2706,6 +2745,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Still unpaid after 6 hours</dd></div>
   <div><dt>Timing</dt><dd>T+6h</dd></div>
   <div><dt>Preview text</dt><dd>If the card is the problem, it doesn't have to be. Corporate billing, bank transfer, or a call.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="E3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-E3">Copy HTML</button>
 </header>
@@ -2780,6 +2820,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Still unpaid after 24 hours</dd></div>
   <div><dt>Timing</dt><dd>T+24h &middot; final</dd></div>
   <div><dt>Preview text</dt><dd>After this, we return it to general sale. This is the last automated email about this order.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="E4" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-E4">Copy HTML</button>
 </header>
@@ -2856,6 +2897,7 @@ a{color:#dc2626}
   <div><dt>Trigger</dt><dd>Trainer assigned to cohort</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Full brief, learner list, and materials inside.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="F1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-F1">Copy HTML</button>
 </header>
@@ -2930,6 +2972,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>24 hours before each session day</dd></div>
   <div><dt>Timing</dt><dd>T&minus;1d &middot; per session</dd></div>
   <div><dt>Preview text</dt><dd>Your host link, tomorrow's agenda, and today's learner feedback.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="F2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-F2">Copy HTML</button>
 </header>
@@ -3006,6 +3049,7 @@ a{color:#018BD4}
   <div><dt>Trigger</dt><dd>30 minutes after scheduled session end</dd></div>
   <div><dt>Timing</dt><dd>T+30m &middot; per session</dd></div>
   <div><dt>Preview text</dt><dd>It triggers the learner recap and records attendance. Please do it tonight.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="F3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-F3">Copy HTML</button>
 </header>
@@ -3080,6 +3124,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Day still not logged &middot; several hours after F3 &middot; exits once logged</dd></div>
   <div><dt>Timing</dt><dd>Reminder</dd></div>
   <div><dt>Preview text</dt><dd>We still need the topics you covered today. Log them in the dashboard, or just reply to this email.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="F4" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-F4">Copy HTML</button>
 </header>
@@ -3156,6 +3201,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>Lead routed to rep &middot; To: {{sales_rep_email}}</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Assigned to you. The two-hour response clock has started.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="G1" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-G1">Copy HTML</button>
 </header>
@@ -3213,6 +3259,7 @@ a{color:#101030}
   <div><dt>Trigger</dt><dd>No logged activity after 2 hours &middot; To: {{sales_rep_email}} &middot; Cc: Jaya</dd></div>
   <div><dt>Timing</dt><dd>T+2h</dd></div>
   <div><dt>Preview text</dt><dd>No activity logged since assignment. Jaya is copied.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="G2" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-G2">Copy HTML</button>
 </header>
@@ -3270,6 +3317,7 @@ a{color:#dc2626}
   <div><dt>Trigger</dt><dd>Result marked Fail &middot; To: {{sales_rep_email}}</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Call within 48 hours. Do not lead with resit pricing.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="G3" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-G3">Copy HTML</button>
 </header>
@@ -3329,6 +3377,7 @@ a{color:#d97706}
   <div><dt>Trigger</dt><dd>D3 fires &middot; To: {{sales_rep_email}}</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>Ticket {{ticket_id}}. Reschedule is still on the table.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="G4" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-G4">Copy HTML</button>
 </header>
@@ -3384,6 +3433,7 @@ a{color:#dc2626}
   <div><dt>Trigger</dt><dd>D5 fires &middot; To: {{sales_rep_email}}</dd></div>
   <div><dt>Timing</dt><dd>T+0</dd></div>
   <div><dt>Preview text</dt><dd>FYI only. No action unless the change is material.</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="G5" placeholder="Add feedback for this email…"></textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-G5">Copy HTML</button>
 </header>
@@ -3442,4 +3492,10 @@ function done(){var o=b.textContent;b.textContent='Copied';setTimeout(function()
 if(navigator.clipboard){navigator.clipboard.writeText(t).then(done).catch(fb)}else{fb()}
 function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();done()}
 })});
+document.querySelectorAll('.fb').forEach(function(ta){
+var k='fb_'+ta.dataset.id;
+var saved=localStorage.getItem(k);
+if(saved!==null)ta.value=saved;
+ta.addEventListener('input',function(){localStorage.setItem(k,ta.value)});
+});
 </script></body></html>

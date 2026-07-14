@@ -114,7 +114,9 @@ def signoff(line,team): return ("signoff",(line,team))
 def disc(t): return ("disc",t)
 
 E=[]
-def em(**k): E.append(k)
+def em(**k):
+    k.setdefault("feedback","")
+    E.append(k)
 
 # ======================================================= FLOW A
 em(id="A1",flow="A. Enquiry &amp; Purchase",theme="violet",sender="learn@invensislearning.com",
@@ -1061,9 +1063,11 @@ cur=None
 for e in E:
     if e["flow"]!=cur:
         cur=e["flow"]; md+=["","---","",f"## FLOW {strip(cur)}",""]
+    fb_line = f"**Feedback:** {strip(e['feedback'])}" if e.get("feedback") else "**Feedback:** _none_"
     md+=[f"### {e['id']} | {strip(e['subject'])}","",
          f"**From:** {strip(e['sender'])} · **Trigger:** {strip(e['trigger'])} · **{strip(e['timing'])}**","",
          f"**Subject:** {strip(e['subject'])}  ",f"**Preview:** {strip(e['preview'])}","",
+         fb_line,"",
          mdb(e["blocks"]),""]
 
 os.makedirs("../output",exist_ok=True)
@@ -1091,6 +1095,7 @@ for e in E:
   <div><dt>Trigger</dt><dd>{e["trigger"]}</dd></div>
   <div><dt>Timing</dt><dd>{e["timing"]}</dd></div>
   <div><dt>Preview text</dt><dd>{strip(e["preview"])}</dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="{e["id"]}" placeholder="Add feedback for this email…">{_h.escape(e.get("feedback",""))}</textarea></dd></div>
  </dl>
  <button class="copy" data-t="s-{e["id"]}">Copy HTML</button>
 </header>
@@ -1147,6 +1152,10 @@ dd{{margin:0;font-size:12.5px;color:{SOFT};word-break:break-word}}
 .eids{{font:600 9.5px/1 {BODY};letter-spacing:.15em;text-transform:uppercase;color:{MUT}}}
 .eb{{padding:26px 34px 32px}}
 .ef{{background:{NAVY};padding:22px 34px 26px;font:400 11px/1.85 {BODY};color:#8f98c0;text-align:center}}
+.fb-row{{grid-column:1/-1}}
+.fb{{width:100%;min-height:60px;padding:10px 12px;border:1.5px dashed #d1d5db;border-radius:8px;font:13px/1.5 {BODY};color:{INK};background:#fefce8;resize:vertical}}
+.fb:focus{{border-color:{BLUE};outline:none;box-shadow:0 0 0 3px rgba(1,139,212,.15)}}
+.fb::placeholder{{color:#9ca3af}}
 @media(max-width:960px){{.shell{{grid-template-columns:1fr}}nav{{position:static;height:auto}}main{{padding:28px 16px 80px}}.copy{{position:static;margin-top:12px}}}}
 @media(prefers-reduced-motion:reduce){{*{{transition:none!important;animation:none!important}}}}
 </style></head><body>
@@ -1174,6 +1183,12 @@ function done(){{var o=b.textContent;b.textContent='Copied';setTimeout(function(
 if(navigator.clipboard){{navigator.clipboard.writeText(t).then(done).catch(fb)}}else{{fb()}}
 function fb(){{var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();done()}}
 }})}});
+document.querySelectorAll('.fb').forEach(function(ta){{
+var k='fb_'+ta.dataset.id;
+var saved=localStorage.getItem(k);
+if(saved!==null)ta.value=saved;
+ta.addEventListener('input',function(){{localStorage.setItem(k,ta.value)}});
+}});
 </script></body></html>'''
 open("../output/invensis-emails.html","w",encoding="utf-8").write(g)
 print("templates:",len(E),"| flows:",len(flows),"| html kb:",round(len(g)/1024))
