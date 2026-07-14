@@ -1095,7 +1095,7 @@ for e in E:
   <div><dt>Trigger</dt><dd>{e["trigger"]}</dd></div>
   <div><dt>Timing</dt><dd>{e["timing"]}</dd></div>
   <div><dt>Preview text</dt><dd>{strip(e["preview"])}</dd></div>
-  <div class="fb-row"><dt>Feedback</dt><dd><textarea class="fb" data-id="{e["id"]}" placeholder="Add feedback for this email…">{_h.escape(e.get("feedback",""))}</textarea></dd></div>
+  <div class="fb-row"><dt>Feedback</dt><dd><div class="fb-wrap"><textarea class="fb" data-id="{e["id"]}" placeholder="Add feedback for this email…">{_h.escape(e.get("feedback",""))}</textarea><div class="fb-actions"><button class="fb-save" data-id="{e["id"]}">Save</button><span class="fb-status" data-id="{e["id"]}"></span></div></div></dd></div>
  </dl>
  <button class="copy" data-t="s-{e["id"]}">Copy HTML</button>
 </header>
@@ -1153,9 +1153,18 @@ dd{{margin:0;font-size:12.5px;color:{SOFT};word-break:break-word}}
 .eb{{padding:26px 34px 32px}}
 .ef{{background:{NAVY};padding:22px 34px 26px;font:400 11px/1.85 {BODY};color:#8f98c0;text-align:center}}
 .fb-row{{grid-column:1/-1}}
+.fb-wrap{{display:flex;flex-direction:column;gap:8px}}
 .fb{{width:100%;min-height:60px;padding:10px 12px;border:1.5px dashed #d1d5db;border-radius:8px;font:13px/1.5 {BODY};color:{INK};background:#fefce8;resize:vertical}}
 .fb:focus{{border-color:{BLUE};outline:none;box-shadow:0 0 0 3px rgba(1,139,212,.15)}}
 .fb::placeholder{{color:#9ca3af}}
+.fb-actions{{display:flex;align-items:center;gap:10px}}
+.fb-save{{font:700 11px/1 {BODY};letter-spacing:.06em;text-transform:uppercase;background:{BLUE};color:#fff;border:0;padding:8px 18px;border-radius:6px;cursor:pointer;transition:background .15s}}
+.fb-save:hover{{background:{BLUE_D}}}
+.fb-save.saved{{background:{GRN}}}
+.fb-status{{font:600 12px/1 {BODY};color:{GRN};opacity:0;transition:opacity .3s}}
+.fb-status.show{{opacity:1}}
+.export-fb{{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font:700 12px/1 {BODY};letter-spacing:.06em;text-transform:uppercase;background:{INK};color:#fff;border:0;padding:12px 20px;border-radius:8px;cursor:pointer}}
+.export-fb:hover{{background:{BLUE}}}
 @media(max-width:960px){{.shell{{grid-template-columns:1fr}}nav{{position:static;height:auto}}main{{padding:28px 16px 80px}}.copy{{position:static;margin-top:12px}}}}
 @media(prefers-reduced-motion:reduce){{*{{transition:none!important;animation:none!important}}}}
 </style></head><body>
@@ -1173,6 +1182,7 @@ dd{{margin:0;font-size:12.5px;color:{SOFT};word-break:break-word}}
 <span class="lc" style="background:{RED}">Red · failure or final notice</span>
 <span class="lc" style="background:{NAVY}">Navy · internal &amp; sensitive</span>
 </div>
+<button class="export-fb" id="exportFb">Export All Feedback</button>
 </div>
 {cards}
 </main></div>
@@ -1187,7 +1197,36 @@ document.querySelectorAll('.fb').forEach(function(ta){{
 var k='fb_'+ta.dataset.id;
 var saved=localStorage.getItem(k);
 if(saved!==null)ta.value=saved;
-ta.addEventListener('input',function(){{localStorage.setItem(k,ta.value)}});
+}});
+document.querySelectorAll('.fb-save').forEach(function(btn){{
+btn.addEventListener('click',function(){{
+var id=btn.dataset.id;
+var ta=document.querySelector('.fb[data-id="'+id+'"]');
+var st=document.querySelector('.fb-status[data-id="'+id+'"]');
+localStorage.setItem('fb_'+id,ta.value);
+btn.classList.add('saved');btn.textContent='Saved';
+st.textContent='Saved!';st.classList.add('show');
+setTimeout(function(){{btn.classList.remove('saved');btn.textContent='Save';st.classList.remove('show')}},2000);
+}});
+}});
+document.getElementById('exportFb').addEventListener('click',function(){{
+var rows=[['Email ID','Subject','Feedback']];
+document.querySelectorAll('.fb').forEach(function(ta){{
+var id=ta.dataset.id;
+var val=localStorage.getItem('fb_'+id)||ta.value||'';
+if(val){{
+var subEl=document.getElementById(id);
+var sub=subEl?subEl.querySelector('.mr h2'):null;
+var subj=sub?sub.textContent:'';
+rows.push([id,'"'+subj.replace(/"/g,'""')+'"','"'+val.replace(/"/g,'""')+'"']);
+}}
+}});
+if(rows.length<2){{alert('No feedback saved yet.');return}}
+var csv=rows.map(function(r){{return r.join(',')}}).join('\\n');
+var blob=new Blob([csv],{{type:'text/csv'}});
+var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+a.download='email-feedback-'+new Date().toISOString().slice(0,10)+'.csv';
+a.click();URL.revokeObjectURL(a.href);
 }});
 </script></body></html>'''
 open("../output/invensis-emails.html","w",encoding="utf-8").write(g)
