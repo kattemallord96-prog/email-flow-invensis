@@ -1,7 +1,7 @@
 # Invensis Learning | Lifecycle Emails v3.0
 
 Voice and visual system matched to the official Invensis PMP brochure.
-46 templates across 7 flows. British English. HTML in `invensis-emails.html`.
+60 templates across 7 flows. British English. HTML in `invensis-emails.html`.
 
 
 ---
@@ -35,16 +35,16 @@ Thank you for your interest in {{course_name}}. You have taken an important firs
 _Set your password once to access the latest brochure anytime, no need to download it again_
 
 > **Have a question the brochure doesn't answer?**
-> Just reply to this email. A real person on our enrolment team reads every one, and we usually reply within four working hours. No question is too small.
+> Just reply to this email. A real person on our enrolment team reads every one, and we usually reply within 1 business day. No question is too small.
 
 Welcome aboard,
 **The Invensis Learning Team**
 
-### A2 | Welcome, {{first_name}}: let's talk about {{course_name}}
+### A2 | Thanks for your enquiry, {{first_name}} — we've received your request
 
 **From:** learn@invensislearning.com · **Trigger:** Individual enquiry submitted · **T+0**
 
-**Subject:** Welcome, {{first_name}}: let's talk about {{course_name}}  
+**Subject:** Thanks for your enquiry, {{first_name}} — we've received your request  
 **Preview:** Thank you for reaching out. A training advisor will call you within one working day.
 
 **Feedback:** _none_
@@ -65,9 +65,9 @@ Thank you for enquiring about {{course_name}}, and welcome to Invensis Learning.
 
 **What happens next**
 
-1. **Within 1 working day**: A training advisor will call to talk through cohort options, the accreditation route, and pricing
+1. **Within 1 working day**: A training advisor will call and email to talk through cohort options, the accreditation route, and pricing
 2. **On that call**: Our advisors will guide you to the right option
-3. **If it's a fit**: You'll get a written summary with the exact cohort, price, and what's included, so you can take it to your manager
+3. **If it's a fit**: You'll get a written summary with the exact cohort, price, and what's included, so you can make a decision
 
 **[ Book a Time That Suits You ]** → `{{booking_url}}`
 
@@ -76,11 +76,11 @@ _15 minutes · pick a slot · talk to a real advisor_
 Kind regards,
 **The Invensis Learning Team**
 
-### A3 | Thanks {{first_name}}: let's plan your {{course_name}} training
+### A3 | Thanks for your enquiry, {{first_name}} — we've received your request
 
 **From:** learn@invensislearning.com · **Trigger:** Group enquiry submitted · **T+0**
 
-**Subject:** Thanks {{first_name}}: let's plan your {{course_name}} training  
+**Subject:** Thanks for your enquiry, {{first_name}} — we've received your request  
 **Preview:** Welcome to Invensis Learning. A training advisor will be in touch within one working day.
 
 **Feedback:** _none_
@@ -109,9 +109,6 @@ Thank you for enquiring about {{course_name}} for your team, and welcome to Inve
 **[ Book a Scoping Call ]** → `{{booking_url}}`
 
 _30 minutes · no obligation · scoping only_
-
-> **Need to get budget approved first?**
-> Reply and we will send a one-page business case template your L&D or HR team can take to finance, at no cost.
 
 Looking forward to working with you,
 **The Corporate Training Team**
@@ -146,8 +143,8 @@ Thank you for choosing Invensis Learning. Here is exactly what you have booked. 
 
 **What happens next**
 
-1. **Right now**: Payment processing. Your payment receipt is emailed the moment it clears
-2. **Within 15 minutes**: Your dashboard opens with course materials and your cohort schedule
+1. **Right now**: Payment received. Your payment receipt is emailed the moment it clears
+2. **Within 15 minutes**: Your dashboard opens with training details and your cohort schedule
 3. **Within 24 hours**: Calendar invites for every cohort session, sent to Google and Outlook
 4. **7 days before kick-off**: Your pre-course preparation guide and checklist
 
@@ -220,11 +217,13 @@ _Set your password once, then access everything below anytime_
 
 **Everything you'll access in your dashboard**
 
-1. **Course materials**: Pre-reading, slides, and resources for {{course_name}}
-2. **Session details**: Your cohort schedule, timings, and your join link
-3. **Payment receipt**: Your receipt now, and your official invoice after training completes
-4. **Feedback forms**: Share a quick note each day to help shape your trainer's next session
-5. **Support tickets**: Raise and track any reschedule, change, or query in one place
+1. **Session details**: Your cohort schedule, timings, and your join link
+2. **Payment receipt**: Your receipt now, and your official invoice after training completes
+3. **Feedback forms**: Share a quick note each day to help shape your trainer's next session
+4. **Support tickets**: Raise and track any reschedule, change, or query in one place
+
+> **Complete your learner profile**
+> Please take a moment to fill in your profile in the dashboard. It helps us understand your experience level and learning goals so we can tailor the delivery to give you the best possible training experience.
 
 **Your cohort details**
 
@@ -357,6 +356,46 @@ _{{seat_count}} seats to allocate · takes about 5 minutes_
 Looking forward to having your team in the cohort,
 **The Cohort Team**
 
+### A10 | You're enrolled in {{course_name}}, {{first_name}}
+
+**From:** learn@invensislearning.com · **Trigger:** Coordinator adds learner to group order · **T+0**
+
+**Subject:** You're enrolled in {{course_name}}, {{first_name}}  
+**Preview:** {{coordinator_name}} from {{company}} has enrolled you. Your dashboard is ready.
+
+**Feedback:** _none_
+
+**YOU'RE IN**
+
+###  Welcome to {{course_name}}, {{first_name}}
+
+{{coordinator_name}} from {{company}} has enrolled you in {{course_name}}. Your training dashboard is now live and ready for you to set up.
+
+**[ Go to My Dashboard ]** → `{{dashboard_url}}`
+
+_Log in with your email address · {{learner_email}}_
+
+**Your training details**
+
+| | |
+|---|---|
+| Course | {{course_name}} |
+| Cohort dates | {{batch_start_date}} &ndash; {{batch_end_date}} |
+| Session time | {{session_time}} {{timezone}} |
+| Enrolled by | {{coordinator_name}}, {{company}} |
+
+**What to do now**
+
+1. **Log in to your dashboard**: Use the link above to access your dashboard. All your course materials, schedule, and joining details are there
+2. **Complete your learner profile**: Fill in your details so your trainer can tailor the sessions to the group
+3. **Check your schedule**: Block {{session_time}} on your calendar for all cohort days so nothing clashes
+
+> **You'll hear from us again before kick-off**
+> Three days before your cohort starts, we'll send you your join link, a prep checklist, and everything you need to be ready on Day 1.
+
+Looking forward to having you in the cohort,
+**The Cohort Team**
+
 
 ---
 
@@ -388,6 +427,8 @@ _Same link works for every cohort day · bookmark it now_
 - [ ] **Bookmark the join link**: The same link works every cohort day. Save it now so there's no scramble at 8:55 AM on Day 1
 - [ ] **Set up in a quiet space**: You'll be in live discussion and breakout groups, not just listening, so somewhere you can speak freely helps
 - [ ] **Block your calendar and grab a notepad**: {{session_time}} for every cohort day, no meetings or interruptions, and something to hand for the live exercises
+- [ ] **Check for system updates**: Run any pending operating system or browser updates before the session so they don't interrupt you mid-training
+- [ ] **Keep a backup device ready**: Have a second laptop, tablet, or phone nearby in case of a last-minute technical issue with your primary device
 
 **How the sessions run**
 
@@ -398,6 +439,59 @@ _Same link works for every cohort day · bookmark it now_
 
 > **Please don't**
 > Record the session, or share your join link outside your cohort. And try not to multitask through the exercises. They're where the learning actually happens.
+
+> **Attendance and your certificate**
+> Attendance across all cohort days is required for your certificate of participation. If something comes up, tell your cohort manager early rather than late.
+
+See you on {{batch_start_date}},
+**The Cohort Team**
+
+### B1a | Three days to kick-off: your venue details & prep guide
+
+**From:** cohort@invensislearning.com · **Trigger:** 72 hours before classroom cohort start · **T-3d**
+
+**Subject:** Three days to kick-off: your venue details & prep guide  
+**Preview:** Your training venue, the Day 1 schedule, and a five-minute checklist to arrive ready.
+
+**Feedback:** _none_
+
+**THREE DAYS TO GO**
+
+###  Almost time, {{first_name}}
+
+Your classroom cohort begins on {{batch_start_date}} at {{session_time}} {{timezone}}. Here's everything you need so you can arrive relaxed and ready.
+
+**Your venue details**
+
+| | |
+|---|---|
+| Venue | {{venue_name}} |
+| Address | {{venue_address}} |
+| Date | {{batch_start_date}} to {{batch_end_date}} |
+| Time | {{session_time}} {{timezone}} |
+| Format | Classroom Training (In-person) |
+
+**[ View on Map ]** → `{{venue_map_url}}`
+
+_Get directions to the training venue_
+
+**Your five-minute checklist**
+
+- [ ] **Carry a valid photo ID**: You may need it for venue entry and attendance verification
+- [ ] **Bring a notepad and pen**: For the live exercises, case studies, and notes during discussions
+- [ ] **Dress smart casual**: Smart casual or business attire is recommended for the training venue
+- [ ] **Plan your commute**: Check the route and allow extra time for traffic or parking on Day 1
+- [ ] **Block your calendar**: {{session_time}} for every cohort day, no meetings or interruptions
+
+**How the sessions run**
+
+1. **Arrive fifteen minutes early**: Registration and setup happen before we start. We begin on time, every time
+2. **Engage and participate**: This is a workshop, not a lecture. The exercises and breakout groups are where the learning happens
+3. **Ask in the moment**: Don't save questions for the end. The person next to you has the same one
+4. **Keep phones on silent**: Minimise distractions so the whole group can stay focused
+
+> **Please don't**
+> Use your phone or laptop for non-training purposes during the session. And try not to step out during exercises. They're where the learning actually happens.
 
 > **Attendance and your certificate**
 > Attendance across all cohort days is required for your certificate of participation. If something comes up, tell your cohort manager early rather than late.
@@ -472,6 +566,40 @@ _2 minutes · reaches your trainer before tomorrow_
 See you tomorrow,
 **The Cohort Team**
 
+### B3a | We missed you today, {{first_name}} &ndash; here's how to catch up
+
+**From:** cohort@invensislearning.com · **Trigger:** Learner marked absent for a session · **T+2h**
+
+**Subject:** We missed you today, {{first_name}} &ndash; here's how to catch up  
+**Preview:** You missed Day {{day_number}}. Here's what was covered and how to get back on track.
+
+**Feedback:** _none_
+
+**MISSED SESSION**
+
+###  We missed you, {{first_name}}
+
+We noticed you weren't able to join Day {{day_number}} of {{course_name}}. We hope everything is okay. Here's what was covered and what you can do to stay on track.
+
+> **Today's topics**
+> {{topics_covered}}
+
+**How to catch up**
+
+1. **Watch the session recording**: The recording is available in your dashboard. We recommend watching it before the next session so you're up to speed
+2. **Download the slides**: Today's slides are in your dashboard. Review them alongside the recording for the full picture
+3. **Reach out if you're stuck**: If anything from today's session is unclear, reply to this email and your cohort manager will help
+
+> **Attendance matters**
+> Attendance across all cohort days is required for your certificate of participation. If you're unable to attend upcoming sessions, please let your cohort manager know as soon as possible so we can explore options together.
+
+**[ View My Dashboard ]** → `{{dashboard_url}}`
+
+_Access the recording, slides, and your cohort schedule_
+
+We're here to help,
+**The Cohort Team**
+
 ### B4 | Cohort complete, {{first_name}}: download your certificate
 
 **From:** cohort@invensislearning.com · **Trigger:** Final day marked complete · **T+2h**
@@ -483,7 +611,7 @@ See you tomorrow,
 
 **COHORT COMPLETE**
 
-###  You did it, {{first_name}}
+###  Congratulations, {{first_name}}
 
 You've completed {{course_name}}. That's {{total_hours}} hours of real work, alongside a full-time job and everything else. Most people who intend to do this never start. Plenty who start don't finish. You're in neither group.
 
@@ -507,6 +635,31 @@ _Signed PDF, ready now, yours to keep_
 One more thing: if the cohort was useful, would you consider leaving a short review? It helps the next person make the same decision you did.
 
 Wishing you every success,
+**The Cohort Team**
+
+### B4a | Your {{course_name}} certificate is still waiting, {{first_name}}
+
+**From:** cohort@invensislearning.com · **Trigger:** Certificate not downloaded after 48 hours · **T+48h**
+
+**Subject:** Your {{course_name}} certificate is still waiting, {{first_name}}  
+**Preview:** You completed the training but haven't picked up your certificate yet. It only takes a moment.
+
+**Feedback:** _none_
+
+**YOUR CERTIFICATE IS READY**
+
+###  Don't forget, {{first_name}}
+
+You put in {{total_hours}} hours to complete {{course_name}} &ndash; your signed certificate of completion is ready and waiting in your dashboard. It only takes a moment to download.
+
+**[ Download My Certificate ]** → `{{certificate_url}}`
+
+_Signed PDF, ready now, yours to keep_
+
+> **Why you should save it now**
+> Your certificate is proof of the work you've completed. Keep it safe for LinkedIn, employer reimbursement, or your professional records. Downloading it now means you'll always have it to hand when you need it.
+
+We're here if you need anything,
 **The Cohort Team**
 
 ### B5 | Your exam voucher is here: valid until {{voucher_expiry}}
@@ -740,35 +893,58 @@ You passed {{exam_name}}. This is a genuine achievement, earned through your own
 
 1. **Add it to LinkedIn while it's still news**: It gets seen, and it gets you approached. Certifications that stay quiet do nothing for you
 2. **Tell your manager in writing**: One line on what you can now do that you couldn't before. Not the credential. The capability
-3. **Decide what it unlocks**: The certificate isn't the return. What you now say yes to is the return
+3. **Decide what it unlocks**: The real value of this certification is the doors it opens &ndash; a new role, a promotion, or a bigger project. Think about what you want to pursue next and go after it
 
-**[ See What's Next ]** → `{{dashboard_url}}/recommended`
+**[ Leave a Quick Review ]** → `{{review_url}}`
 
-_{{next_course_suggestion}} · alumni get {{alumni_discount}} off_
+_60 seconds · helps the next learner decide_
 
 Quick favour: would you mind leaving a 60-second review? It helps the next person decide.
 
 Congratulations once again,
 **The Certification Team**
 
-### B8 | About your {{exam_name}} result, {{first_name}}
+### B7a | {{first_name}}, your experience could help the next learner
+
+**From:** cohort@invensislearning.com · **Trigger:** Review not submitted 5 days after exam pass · **T+5d**
+
+**Subject:** {{first_name}}, your experience could help the next learner  
+**Preview:** A 60-second review from someone who's been through it means more than anything we could write.
+
+**Feedback:** _none_
+
+**ONE SMALL ASK**
+
+###  A moment of your time, {{first_name}}
+
+You've completed {{course_name}} and passed {{exam_name}} &ndash; that puts you in a great position to help someone who's considering the same journey. A short review from you carries more weight than anything we could say ourselves.
+
+**[ Leave a 60-Second Review ]** → `{{review_url}}`
+
+_Quick · honest · genuinely helpful_
+
+> **What makes a helpful review**
+> A line or two on what the training was like, whether it prepared you for the exam, and whether you'd recommend it. That's all it takes to help the next person make a confident decision.
+
+Thank you, {{first_name}},
+**The Certification Team**
+
+### B8 | Your {{exam_name}} result & next steps, {{first_name}}
 
 **From:** exams@invensislearning.com · **Trigger:** Result marked Fail · **MANUAL**
 
-**Subject:** About your {{exam_name}} result, {{first_name}}  
-**Preview:** A setback, not a verdict. We'll stay with you all the way to certification, and an advisor will be in touch.
+**Subject:** Your {{exam_name}} result & next steps, {{first_name}}  
+**Preview:** We regret to share this result, but we are fully committed to supporting you through to certification.
 
 **Feedback:** _none_
 
 **YOUR EXAMINATION RESULT**
 
-###  About your result, {{first_name}}
+###  Your {{exam_name}} result & next steps
 
-You didn't pass {{exam_name}} this time. That's a disappointing email to open, and there's no way to write it that changes that.
+We regret to inform you that you did not clear {{exam_name}} on this attempt. We understand how much effort you have put into this, and we want you to know that we are fully committed to supporting you.
 
-Here's what's also true. A first-attempt fail is common on this exam, and the great majority of people who resit go on to pass. The gap is usually narrow and specific, not broad.
-
-And you are not doing this on your own. Your enrolment with us doesn't end at an exam result. We will stay with you all the way through to certification, and one of our training advisors will reach out shortly to help you plan your next step at a pace that suits you.
+Your enrolment with us doesn't end here. We will stay with you all the way through to certification, and one of our training advisors will reach out shortly to help you plan your next step at a pace that suits you.
 
 **Your result**
 
@@ -778,24 +954,24 @@ And you are not doing this on your own. Your enrolment with us doesn't end at an
 | Attempt | {{attempt_number}} |
 | Your score | {{exam_score}} |
 | Pass mark | {{pass_mark}} |
-| Weaker domains | {{weak_domains}} |
+| Areas to strengthen | {{weak_domains}} |
 
-> **Your score report is the most useful thing you have right now**
-> {{governing_body}} breaks the result down by domain. It tells you which two or three areas to work on, instead of making you revise everything again from scratch.
+> **Your score report will guide your preparation**
+> {{governing_body}} breaks the result down by domain. It identifies the specific areas that need attention, so you can focus your revision where it matters most rather than starting from scratch.
 
 **How we'll support you from here**
 
-1. **A training advisor will be in touch**: Someone from our team will contact you to talk through your options and next steps. No pressure, just support
+1. **A training advisor will be in touch**: Someone from our team will contact you to discuss your options and plan the way forward. No pressure, just support
 2. **A free 30-minute review call**: Your trainer will go through your score report with you and build a focused revision plan, at no charge
-3. **Your dashboard stays open**: Materials, recordings, and practice tests remain available to you
+3. **Your dashboard stays open**: All materials, recordings, and practice tests remain fully available to you
 
 **[ Book a Review Call ]** → `{{review_booking_url}}`
 
 _30 minutes · free · pick any time that suits_
 
-Take a few days. Then let's look at the report together. We're with you until you have that certificate in hand.
+Take the time you need, and when you're ready, we'll work through the report together. We are committed to helping you achieve your certification.
 
-We're not going anywhere,
+We're with you all the way,
 **The Certification Team**
 
 
@@ -832,6 +1008,8 @@ _Same link works for every cohort day · bookmark it now_
 - [ ] **Bookmark the join link**: The same link works every cohort day. Save it now so there's no scramble on Day 1
 - [ ] **Set up in a quiet space**: You'll be in live discussion and breakout groups, not just listening, so somewhere you can speak freely helps
 - [ ] **Block your calendar**: {{session_time}} for every cohort day. No meetings, no interruptions
+- [ ] **Check for system updates**: Run any pending operating system or browser updates before the session so they don't interrupt you mid-training
+- [ ] **Keep a backup device ready**: Have a second laptop, tablet, or phone nearby in case of a last-minute technical issue with your primary device
 
 **How the sessions run**
 
@@ -884,34 +1062,57 @@ See you tomorrow,
 **From:** cohort@invensislearning.com · **Trigger:** Final day marked complete · **T+2h**
 
 **Subject:** Cohort complete, {{first_name}}: download your certificate  
-**Preview:** Your certificate of completion, session recordings, and your official invoice are ready.
+**Preview:** Congratulations on completing {{course_name}}. Your certificate is ready to download.
 
 **Feedback:** _none_
 
 **COHORT COMPLETE**
 
-###  You did it, {{first_name}}
+###  Congratulations, {{first_name}}
 
-You've completed {{course_name}}. The value of this isn't what you now know. It's what you do differently on Monday, when nobody's watching and there's no trainer in the room.
+You have successfully completed {{course_name}}. Thank you for your commitment across all the sessions &ndash; your signed certificate of completion is ready to download.
 
 **[ Download My Certificate ]** → `{{certificate_url}}`
 
 _Signed PDF, ready now, yours to keep_
 
-**What comes next**
+**What's ready for you**
 
-1. **Your certificate of completion**: A signed PDF, ready to download. Save it for LinkedIn, your records, or employer reimbursement
-2. **Your official invoice**: Available in your dashboard now that training is complete. Use it for reimbursement or tax filing
-3. **Session recordings**: Shared by email within 48 hours
-4. **Apply one thing this week**: Pick the smallest idea from the cohort and use it before Friday. That's how it sticks
-
-> **We'd value your feedback**
-> If you have three minutes, your thoughts on the programme help us make it better for the next cohort. It's entirely optional, and genuinely appreciated.
+1. **Your certificate of completion**: A signed PDF you can save for LinkedIn, your professional records, or employer reimbursement
+2. **Session recordings**: Will be shared by email within 48 hours so you can revisit any topic
+3. **Your official invoice**: Available in your dashboard for reimbursement or tax filing
 
 > **Your support doesn't stop here**
-> Reply to this email with any question about applying the material. Average reply in 4 hours. Alumni also get exclusive pricing on every other course in our catalogue.
+> Reply to this email with any question about applying the material. Our team typically responds within 4 hours. Alumni also get exclusive pricing on every other course in our catalogue.
+
+Quick favour: if the cohort was useful, would you consider leaving a short review? It helps the next person make the same decision you did.
 
 Wishing you every success,
+**The Cohort Team**
+
+### C3a | Your {{course_name}} certificate is still waiting, {{first_name}}
+
+**From:** cohort@invensislearning.com · **Trigger:** Certificate not downloaded after 48 hours · **T+48h**
+
+**Subject:** Your {{course_name}} certificate is still waiting, {{first_name}}  
+**Preview:** You completed the training but haven't picked up your certificate yet. It only takes a moment.
+
+**Feedback:** _none_
+
+**YOUR CERTIFICATE IS READY**
+
+###  Don't forget, {{first_name}}
+
+You put in the time and effort to complete {{course_name}} &ndash; your signed certificate of completion is ready and waiting in your dashboard. It only takes a moment to download.
+
+**[ Download My Certificate ]** → `{{certificate_url}}`
+
+_Signed PDF, ready now, yours to keep_
+
+> **Why you should save it now**
+> Your certificate is proof of the work you've completed. Keep it safe for LinkedIn, employer reimbursement, or your professional records. Downloading it now means you'll always have it to hand when you need it.
+
+We're here if you need anything,
 **The Cohort Team**
 
 
@@ -1694,3 +1895,322 @@ _Ticket {{ticket_id}}_
 **[ Open Ticket ]** → `{{ops_url}}/tickets/{{ticket_id}}`
 
 _Ticket {{ticket_id}}_
+
+
+---
+
+## FLOW H. Proforma Invoice
+
+### H1 | Proforma invoice {{invoice_number}} for {{course_name}}
+
+**From:** billing@invensislearning.com · **Trigger:** User raises a proforma invoice · **T+0**
+
+**Subject:** Proforma invoice {{invoice_number}} for {{course_name}}  
+**Preview:** Your proforma invoice of {{currency}} {{amount}} for {{course_name}} has been generated. Your enrolment is pending payment.
+
+**Feedback:** _none_
+
+**PROFORMA INVOICE**
+
+###  Your proforma invoice is ready, {{first_name}}
+
+We appreciate your interest in {{course_name}} on {{training_dates}}. Your proforma invoice has been successfully generated and is attached to this email.
+
+Please find the attached proforma invoice {{invoice_number}}, which includes the total amount and payment instructions for your reference. Your enrolment will be confirmed once we receive the payment.
+
+**Order details**
+
+| | |
+|---|---|
+| Order ID | {{order_id}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| Delivery mode | {{delivery_mode}} |
+| Time | {{session_time}} |
+| No. of participants | {{seat_count}} |
+| Event ID | {{event_id}} |
+| Proforma invoice no. | {{invoice_number}} |
+
+**Order summary**
+
+| | |
+|---|---|
+| Course value | {{currency}} {{course_value}} |
+| Discount ({{discount_percent}}) | {{currency}} {{discount_amount}} |
+| Order total | {{currency}} {{amount}} |
+| Payment status | Pending |
+| Payment due date | {{payment_due_date}} |
+
+**[ View Proforma Invoice ]** → `{{invoice_url}}`
+
+_View and download your proforma invoice_
+
+We look forward to having you join us for an enriching learning experience.
+
+We're here if you have any questions,
+**The Billing Team**
+
+### H2 | Reminder: proforma invoice {{invoice_number}} is awaiting payment
+
+**From:** billing@invensislearning.com · **Trigger:** Invoice unpaid after 3 days · **T+3d**
+
+**Subject:** Reminder: proforma invoice {{invoice_number}} is awaiting payment  
+**Preview:** Your proforma invoice for {{course_name}} is awaiting payment. Complete payment to confirm your enrolment.
+
+**Feedback:** _none_
+
+**PAYMENT REMINDER**
+
+###  A quick reminder, {{first_name}}
+
+Your proforma invoice {{invoice_number}} for {{course_name}} on {{training_dates}} hasn't been paid yet. Kindly arrange payment to confirm your enrolment.
+
+**Proforma invoice summary**
+
+| | |
+|---|---|
+| Order ID | {{order_id}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| Order total | {{currency}} {{amount}} |
+| Payment due date | {{payment_due_date}} |
+
+**[ View Proforma Invoice ]** → `{{invoice_url}}`
+
+_View and download your proforma invoice_
+
+> **Need more time or help?**
+> If you need an extension or have any questions, simply reply to this email and we'll be happy to help.
+
+Happy to help,
+**The Billing Team**
+
+### H3 | Proforma invoice {{invoice_number}} is now overdue
+
+**From:** billing@invensislearning.com · **Trigger:** Payment due date passed without payment · **T+1d after due date**
+
+**Subject:** Proforma invoice {{invoice_number}} is now overdue  
+**Preview:** Payment for proforma invoice {{invoice_number}} was due on {{payment_due_date}} and has not been received.
+
+**Feedback:** _none_
+
+**PAYMENT OVERDUE**
+
+###  Your proforma invoice is overdue, {{first_name}}
+
+Your proforma invoice {{invoice_number}} for {{course_name}} on {{training_dates}} was due for payment on {{payment_due_date}} and has not been received.
+
+Kindly arrange payment at the earliest to confirm your enrolment. If the payment has already been made, please share the transaction details so we can match it to your account.
+
+**Overdue proforma invoice**
+
+| | |
+|---|---|
+| Proforma invoice no. | {{invoice_number}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| Order total | {{currency}} {{amount}} |
+| Was due on | {{payment_due_date}} |
+
+**[ View Proforma Invoice ]** → `{{invoice_url}}`
+
+_View and download your proforma invoice_
+
+> **Need more time or help?**
+> If you need an extension or have any questions, simply reply to this email and we'll be happy to help.
+
+We'd hate for you to miss out,
+**The Billing Team**
+
+### H4 | Payment received :  you're confirmed for {{course_name}}, {{first_name}}
+
+**From:** billing@invensislearning.com · **Trigger:** Payment received against proforma invoice · **T+0**
+
+**Subject:** Payment received :  you're confirmed for {{course_name}}, {{first_name}}  
+**Preview:** We've received your payment of {{currency}} {{amount}}. Your enrolment is now confirmed.
+
+**Feedback:** _none_
+
+**PAYMENT RECEIVED**
+
+###  You're confirmed, {{first_name}}
+
+We have received your payment of {{currency}} {{amount}} against proforma invoice {{invoice_number}}. Your enrolment in {{course_name}} on {{training_dates}} is now confirmed.
+
+**Payment confirmation**
+
+| | |
+|---|---|
+| Order ID | {{order_id}} |
+| Proforma invoice no. | {{invoice_number}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| Amount paid | {{currency}} {{amount}} |
+| Payment date | {{payment_date}} |
+
+> **What happens next**
+> Your welcome email with dashboard access and training details will follow shortly. You'll receive your join link and prep guide three days before your training begins.
+
+Thank you for choosing Invensis Learning,
+**The Billing Team**
+
+
+---
+
+## FLOW I. Sales Invoice
+
+### I1 | Invoice {{invoice_number}} for {{course_name}} :  {{company}}
+
+**From:** billing@invensislearning.com · **Trigger:** Sales team raises an invoice · To: {{coordinator_email}}, {{accounts_payable_email}} · **T+0**
+
+**Subject:** Invoice {{invoice_number}} for {{course_name}} :  {{company}}  
+**Preview:** Your invoice of {{currency}} {{amount}} for {{course_name}} has been generated and is attached.
+
+**Feedback:** _none_
+
+**INVOICE RAISED**
+
+###  Your invoice is ready
+
+Dear {{coordinator_name}}, we are pleased to share the invoice for {{course_name}} training for {{company}}. Please find the details below.
+
+The invoice {{invoice_number}} has been generated and is attached to this email. Kindly arrange payment by the due date to confirm enrolment for your learners.
+
+**Invoice details**
+
+| | |
+|---|---|
+| Invoice number | {{invoice_number}} |
+| Order ID | {{order_id}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| Delivery mode | {{delivery_mode}} |
+| No. of participants | {{seat_count}} |
+| Event ID | {{event_id}} |
+
+**Payment summary**
+
+| | |
+|---|---|
+| Course value | {{currency}} {{course_value}} |
+| Discount ({{discount_percent}}) | {{currency}} {{discount_amount}} |
+| Invoice total | {{currency}} {{amount}} |
+| Payment due date | {{invoice_due_date}} |
+| Payment status | Pending |
+
+**[ View Invoice ]** → `{{invoice_url}}`
+
+_View and download your invoice_
+
+> **Payment instructions**
+> Bank transfer details and payment reference are included in the attached invoice. Please quote {{invoice_number}} as the payment reference to ensure your payment is matched promptly.
+
+We're here if you have any questions,
+**The Billing Team**
+
+### I2 | Reminder: invoice {{invoice_number}} is due tomorrow
+
+**From:** billing@invensislearning.com · **Trigger:** Invoice unpaid, 1 day before due date · To: {{coordinator_email}}, {{accounts_payable_email}} · **T-1d from due date**
+
+**Subject:** Reminder: invoice {{invoice_number}} is due tomorrow  
+**Preview:** Payment for invoice {{invoice_number}} is due on {{invoice_due_date}}. Kindly arrange payment to confirm enrolment.
+
+**Feedback:** _none_
+
+**PAYMENT DUE TOMORROW**
+
+###  A quick reminder
+
+Dear {{coordinator_name}}, this is a friendly reminder that invoice {{invoice_number}} for {{course_name}} training for {{company}} is due for payment tomorrow, {{invoice_due_date}}.
+
+**Invoice summary**
+
+| | |
+|---|---|
+| Invoice number | {{invoice_number}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| No. of participants | {{seat_count}} |
+| Invoice total | {{currency}} {{amount}} |
+| Payment due date | {{invoice_due_date}} |
+
+**[ View Invoice ]** → `{{invoice_url}}`
+
+_View and download your invoice_
+
+> **Need more time or help?**
+> If you need an extension or have any questions, simply reply to this email and we'll be happy to help.
+
+Happy to help,
+**The Billing Team**
+
+### I3 | Invoice {{invoice_number}} is now overdue
+
+**From:** billing@invensislearning.com · **Trigger:** Invoice unpaid, due date passed · To: {{coordinator_email}}, {{accounts_payable_email}} · **T+1d after due date**
+
+**Subject:** Invoice {{invoice_number}} is now overdue  
+**Preview:** Payment for invoice {{invoice_number}} was due on {{invoice_due_date}} and has not been received.
+
+**Feedback:** _none_
+
+**INVOICE OVERDUE**
+
+###  Payment is overdue
+
+Dear {{coordinator_name}}, payment for invoice {{invoice_number}} for {{course_name}} training for {{company}} was due on {{invoice_due_date}} and has not been received.
+
+Kindly arrange payment at the earliest to avoid any disruption to your learners' enrolment. If the payment has already been made, please share the transaction details so we can match it to your account.
+
+**Overdue invoice**
+
+| | |
+|---|---|
+| Invoice number | {{invoice_number}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| No. of participants | {{seat_count}} |
+| Invoice total | {{currency}} {{amount}} |
+| Was due on | {{invoice_due_date}} |
+
+**[ View Invoice ]** → `{{invoice_url}}`
+
+_View and download your invoice_
+
+> **Need more time or help?**
+> If you need an extension or have any questions, simply reply to this email and we'll be happy to help.
+
+Please don't hesitate to reach out if you need assistance,
+**The Billing Team**
+
+### I4 | Payment received for invoice {{invoice_number}} :  thank you
+
+**From:** billing@invensislearning.com · **Trigger:** Payment received against sales invoice · To: {{coordinator_email}}, {{accounts_payable_email}} · **T+0**
+
+**Subject:** Payment received for invoice {{invoice_number}} :  thank you  
+**Preview:** We've received your payment of {{currency}} {{amount}}. Enrolment for {{company}} is now confirmed.
+
+**Feedback:** _none_
+
+**PAYMENT RECEIVED**
+
+###  Payment confirmed
+
+Dear {{coordinator_name}}, we have received payment of {{currency}} {{amount}} against invoice {{invoice_number}} for {{course_name}} training for {{company}}. Thank you.
+
+**Payment confirmation**
+
+| | |
+|---|---|
+| Invoice number | {{invoice_number}} |
+| Order ID | {{order_id}} |
+| Course | {{course_name}} |
+| Training dates | {{training_dates}} |
+| No. of participants | {{seat_count}} |
+| Amount paid | {{currency}} {{amount}} |
+| Payment date | {{payment_date}} |
+
+> **What happens next**
+> Enrolment for your learners is now confirmed. Each learner will receive their welcome email with dashboard access and training details. Three days before the training, they will receive their join link and prep guide.
+
+Thank you for choosing Invensis Learning,
+**The Billing Team**
